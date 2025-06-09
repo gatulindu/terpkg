@@ -20,24 +20,14 @@ void init() {
 	mkdir("src", 0755);
 	mkdir("lib", 0755);
 
-  FILE* src;
-	FILE* lib;
+	FILE* src = fopen("src/main.ter", "w");
+	FILE* lib = fopen("lib/lib.ter", "w");
 
-	fopen("src/main.ter", "w");
-	lib = fopen("lib/lib.ter", "w");
+	fprintf(src, "include(\"lib/lib.ter\")\nhello()");
+	fprintf(lib, "set hello() {\n  output(\"Hello World!\")\n}");
 
-	if (src == NULL || lib == NULL) {
-		src = fopen("src/main.ter", "w");
-		lib = fopen("lib/lib.ter", "w");
+	fclose(src);
+	fclose(lib);
 
-		fprintf(src, "include(\"lib/lib.ter\")\nhello()");
-		fprintf(lib, "set hello() {\n  output(\"Hello World!\")\n}");
-
-		fclose(src);
-		fclose(lib);
-
-		printf("\e[32mFiles Created Successfully!\e[0m\n");
-	} else {
-		perror("\e[31mCouldn't Create The Files!\e[0m\n");
-	}
+	printf("\e[32mFiles Created Successfully!\e[0m\n");
 }
