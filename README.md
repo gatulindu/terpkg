@@ -29,7 +29,7 @@ Runs the Terlang code of the current project.
 ```bash
 terpkg --run
 ```
---help
+## `--help`
 Displays help information about how to use terpkg.
 
 ```bash
