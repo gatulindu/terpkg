@@ -1,5 +1,5 @@
 > [!NOTE]
-> Terpkg is still in alpha, so there may be glitches that will be resolved over time
+> **Terpkg is currently in its alpha stage, which means it is still in the early phases of development. As a result, users may encounter some bugs, glitches, or unexpected behavior while using the software. The developer is actively working to identify and fix these issues, so over time, the stability and reliability of Terpkg will improve significantly. It’s important for users to keep in mind that since the software is still being refined, occasional problems are to be expected during this period.**
 
 # Terpkg
 
