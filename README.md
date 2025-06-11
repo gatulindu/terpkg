@@ -1,4 +1,5 @@
-> ⚠️ Terpkg is still in alpha, so there may be glitches that will be resolved over time
+> [!NOTE]
+> Terpkg is still in alpha, so there may be glitches that will be resolved over time
 
 ![logo](./logo.png)
 
