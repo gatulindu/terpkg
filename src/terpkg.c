@@ -4,30 +4,56 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 
+#define PERM 0755
+
 void help() {
-	printf("Terpkg, Version 0.0.1\nUsage: terpkg [option]\nTerpkg long options:\n\t--init\n\t--run\n\t--help\n");
+    printf("Terpkg - Version 0.0.1\n\n");
+    printf("Usage:\n");
+    printf("  terpkg [option]\n\n");
+    printf("Options:\n");
+    printf("  --init    Initialize a new terpkg project\n");
+    printf("  --run     Run the main terpkg application\n");
+    printf("  --help    Show this help message\n");
 }
 
 void run() {
-	printf("\e[35mStarting The Application\e[0m\n");
-	system("ter ./src/main.ter");
-	printf("\e[35mFinished Application\e[0m\n");
+    printf("\033[35mStarting The Application\033[0m\n");
+    int status = system("ter ./src/main.ter");
+    if (status != 0) {
+        fprintf(stderr, "\033[31mError: Failed to run application (code %d)\033[0m\n", status);
+    }
+    printf("\033[35mFinished Application\033[0m\n");
 }
 
 void init() {
-	printf("\e[36mCreate Files...\e[0m\n");
+    printf("\033[36mCreating project structure...\033[0m\n");
 
-	mkdir("src", 0755);
-	mkdir("lib", 0755);
+    if (mkdir("src", PERM) != 0) {
+        perror("Error creating src directory");
+    }
 
-	FILE* src = fopen("src/main.ter", "w");
-	FILE* lib = fopen("lib/lib.ter", "w");
+    if (mkdir("lib", PERM) != 0) {
+        perror("Error creating lib directory");
+    }
 
-	fprintf(src, "include(\"lib/lib.ter\")\nhello()");
-	fprintf(lib, "set hello() {\n  output(\"Hello World!\")\n}");
+    FILE* src = fopen("src/main.ter", "w");
+    if (!src) {
+        perror("Error creating src/main.ter");
+        return;
+    }
 
-	fclose(src);
-	fclose(lib);
+    FILE* lib = fopen("lib/lib.ter", "w");
+    if (!lib) {
+        perror("Error creating lib/lib.ter");
+        fclose(src);
+        return;
+    }
 
-	printf("\e[32mFiles Created Successfully!\e[0m\n");
+    fprintf(src, "include(\"lib/lib.ter\")\nhello()");
+    fprintf(lib, "set hello() {\n  output(\"Hello World!\")\n}");
+
+    fclose(src);
+    fclose(lib);
+
+    printf("\033[32mProject initialized successfully!\033[0m\n");
 }
