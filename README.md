@@ -1,8 +1,6 @@
 > [!NOTE]
 > Terpkg is still in alpha, so there may be glitches that will be resolved over time
 
-![logo](./logo.png)
-
 # Terpkg
 
 **Terpkg** is a project manager for the Terlang language, making it easy to create, run, and manage your projects.
