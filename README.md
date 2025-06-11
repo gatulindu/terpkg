@@ -44,7 +44,7 @@ terpkg --run    # Runs the project
 ```
 ## License
 
-[MIT](https://github.com/gatulindu/terpkg/blob/main/LICENSE)
+[MIT License](https://github.com/gatulindu/terpkg/blob/main/LICENSE)
 
 ## Contact
 For questions and contributions, please open an issue or send an email to your gatulindu@keemail.me
