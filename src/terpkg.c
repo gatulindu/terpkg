@@ -7,7 +7,7 @@
 #define PERM 0755
 
 void help() {
-    printf("Terpkg - Version 0.0.1\n\n");
+    printf("Terpkg - Version v0.01-alpha - MIT License\n\n");
     printf("Usage:\n");
     printf("  terpkg [option]\n\n");
     printf("Options:\n");
