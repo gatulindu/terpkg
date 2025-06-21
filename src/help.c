@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void help() {
-    printf("Terpkg - Version v0.01-alpha - MIT License\n\n");
+    printf("Terpkg - Version v0.01-release - MIT License\n\n");
     printf("Usage:\n");
     printf("  terpkg [option]\n\n");
     printf("Options:\n");
