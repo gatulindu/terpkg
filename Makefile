@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -Wall -Wextra -O2
 
-SRCS := src/main.c src/terpkg.c
+SRCS := src/main.c src/run.c src/help.c src/init.c
 TARGET := terpkg
 INSTALL_PATH := /usr/local/bin
 
