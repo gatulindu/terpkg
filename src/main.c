@@ -1,4 +1,5 @@
-#include "terpkg.h"
+#include "terp.h"
+
 #include <string.h>
 #include <stdio.h>
 

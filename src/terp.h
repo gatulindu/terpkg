@@ -1,5 +1,5 @@
-#ifndef TERPKG_H
-#define TERPKG_H
+#ifndef TERP_H
+#define TERP_H
 
 void help();
 void run();
