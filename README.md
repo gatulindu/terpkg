@@ -1,8 +1,3 @@
-
-
-> [!NOTE]
-> **Terpkg is currently in its alpha stage, which means it is still in the early phases of development. As a result, users may encounter some bugs, glitches, or unexpected behavior while using the software. The developer is actively working to identify and fix these issues, so over time, the stability and reliability of Terpkg will improve significantly. It’s important for users to keep in mind that since the software is still being refined, occasional problems are to be expected during this period.**
-
 <img src="art/terpkg-banner.png" width="200px" style="border-radius: 10px;">
 
 ---
