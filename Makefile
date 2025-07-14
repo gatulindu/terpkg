@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -Wall -Wextra -O2
 
-SRCS := src/main.c src/run.c src/help.c src/init.c
+SRCS := main.c run.c help.c init.c
 TARGET := terp
 INSTALL_PATH := /usr/local/bin
 

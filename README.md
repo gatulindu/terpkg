@@ -1,10 +1,4 @@
-<img src="art/terpkg-banner.png" width="200px" style="border-radius: 10px;">
-
----
-
-**Terpkg** Terpkg is a comprehensive project manager designed specifically for the Terlang programming language. It simplifies the entire process of creating, running, and managing your Terlang projects by providing a streamlined and user-friendly interface. With Terpkg, developers can automate build tasks and organize their codebase efficiently, allowing them to focus more on writing quality code and less on manual setup
-
----
+<img src="terpkg-banner.png" width="200px" style="border-radius: 10px;">
 
 ## Installation 📦
 
