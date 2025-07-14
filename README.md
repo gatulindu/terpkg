@@ -2,13 +2,12 @@
 
 ## Installation 📦
 
-To install **Terpkg**, use the `make` command in the project directory:
+To install **Terpkg**, use the `bash` command in the project directory:
 
 ```bash
 git clone https://github.com/gatulindu/terpkg
 cd terpkg
-make
-sudo make install
+bash build.bash --auto
 ```
 ## `--init`
 Creates a new Terlang project in the current directory 📁
